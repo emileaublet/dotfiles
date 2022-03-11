@@ -1,5 +1,5 @@
 # Execute
 
 ```bash
-git clone git@github.com:zeachco/dotfiles.git ~/dotfiles && bash ~/dotfiles/setup.sh
+git clone git@github.com:emileaublet/dotfiles.git ~/dotfiles && bash ~/dotfiles/setup.sh
 ```
