@@ -7,7 +7,7 @@ function _add_zsh_variant {
   variant=$1
   profile_filename="$HOME/.zsh_$variant"
   cp "$DOT_DIR/$variant/profile.sh" "$profile_filename"
-  echo "\n[[ -f $profile_filename  ]] && source $profile_filename # zeachco-dotfiles $variant" >> $PROFILE_TARGET
+  echo "\n[[ -f $profile_filename  ]] && source $profile_filename # emileaublet-dotfiles $variant" >> $PROFILE_TARGET
 }
 
 function install_profile {
@@ -18,5 +18,5 @@ function install_profile {
 
 function clean_imports {
   cp -f $PROFILE_TARGET "$PROFILE_TARGET.backup"
-  sed '/zeachco-dotfiles/d' "$PROFILE_TARGET.backup" > $PROFILE_TARGET
+  sed '/emileaublet-dotfiles/d' "$PROFILE_TARGET.backup" > $PROFILE_TARGET
 }
